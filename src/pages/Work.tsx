@@ -1,3 +1,5 @@
+import { ArrowUpRight } from 'lucide-react'
+
 type Project = {
   company: string
   tagline: string
@@ -277,9 +279,10 @@ function Work() {
                   <span className="border-b border-accent/60 pb-px group-hover:border-accent">
                     {formatUrl(project.url)}
                   </span>
-                  <span aria-hidden="true" className="text-accent">
-                    ↗
-                  </span>
+                  <ArrowUpRight
+                    className="h-4 w-4 text-accent"
+                    aria-hidden="true"
+                  />
                 </a>
               )}
             </div>

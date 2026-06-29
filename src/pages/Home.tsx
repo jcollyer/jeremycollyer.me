@@ -24,16 +24,13 @@ function Home() {
       </p>
 
       <p className="mx-auto mt-10 max-w-2xl text-xl leading-relaxed text-stone">
-        I build products that remove friction by combining thoughtful
-        engineering, strong product instincts, and AI.
+        Turning complex technology into products people trust.
       </p>
 
       <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-ink">
-        With more than a decade shipping customer-facing platforms, I care about
-        the craft beneath the surface — the architecture, the details, and the
-        human-in-the-loop experiences that make complex software feel
-        effortless. The work I'm proudest of simplifies difficult workflows and
-        helps people do their best work.
+        I design and build AI-powered products that simplify complex workflows,
+        helping companies transform ambitious ideas into software customers
+        genuinely enjoy using.
       </p>
 
       <div className="mt-12 flex flex-wrap justify-center gap-3">
@@ -41,13 +38,13 @@ function Home() {
           to="/work"
           className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent/85"
         >
-          View my work
+          View My Work
         </Link>
         <Link
           to="/contact"
           className="rounded-full border border-sand px-6 py-3 text-sm font-medium text-stone transition-colors hover:bg-sand/40"
         >
-          Get in touch
+          Let's Connect
         </Link>
       </div>
     </section>

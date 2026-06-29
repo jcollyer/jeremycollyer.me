@@ -10,7 +10,7 @@ const navItems = [
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-stone">
+    <div className="min-h-screen flex flex-col bg-white text-ink">
       <header className="sticky top-0 z-20 border-b border-sand/70 bg-white/85 backdrop-blur">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
           <NavLink to="/" className="flex items-center gap-2">
@@ -30,7 +30,7 @@ function App() {
                       'rounded-full px-3 py-1.5 text-sm transition-colors',
                       isActive
                         ? 'bg-sand text-stone font-medium'
-                        : 'text-stone/70 hover:text-stone hover:bg-sand/40',
+                        : 'text-ink hover:text-stone hover:bg-sand/40',
                     ].join(' ')
                   }
                 >
@@ -47,7 +47,7 @@ function App() {
       </main>
 
       <footer className="border-t border-sand/70">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-stone/60 sm:flex-row">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-ink sm:flex-row">
           <span>© {new Date().getFullYear()} Jeremy Collyer</span>
           <span>Sacramento, CA · Staff Software Engineer</span>
         </div>

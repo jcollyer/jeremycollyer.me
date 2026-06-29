@@ -49,7 +49,7 @@ function Work() {
         <h1 className="text-3xl font-semibold tracking-tight text-stone sm:text-4xl">
           Work
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-stone/70">
+        <p className="mt-4 text-lg leading-relaxed text-ink">
           A look at my most recent experience building AI-powered products and
           customer-facing platforms.
         </p>
@@ -65,15 +65,15 @@ function Work() {
               <h2 className="text-xl font-semibold text-stone">
                 {job.company}
               </h2>
-              <span className="text-sm text-stone/60">{job.period}</span>
+              <span className="text-sm text-ink">{job.period}</span>
             </div>
-            <p className="mt-1 text-sm font-medium text-stone/80">
+            <p className="mt-1 text-sm font-medium text-stone">
               {job.role} · {job.location}
             </p>
-            <p className="mt-4 leading-relaxed text-stone/80">{job.summary}</p>
+            <p className="mt-4 leading-relaxed text-ink">{job.summary}</p>
             <ul className="mt-4 space-y-2">
               {job.highlights.map((point, i) => (
-                <li key={i} className="flex gap-3 text-stone/80">
+                <li key={i} className="flex gap-3 text-ink">
                   <span
                     className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-stone/50"
                     aria-hidden="true"

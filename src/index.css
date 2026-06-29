@@ -3,6 +3,8 @@
 @theme {
   --color-sand: #dedad4;
   --color-stone: #69605b;
+  --color-accent: #7dd6e8;
+  --color-ink: #777777;
   --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -18,7 +20,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background: #ffffff;
-  color: var(--color-stone);
+  color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

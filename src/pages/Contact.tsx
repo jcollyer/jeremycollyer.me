@@ -22,7 +22,7 @@ function Contact() {
       <h1 className="text-3xl font-semibold tracking-tight text-stone sm:text-4xl">
         Contact
       </h1>
-      <p className="mt-4 text-lg leading-relaxed text-stone/70">
+      <p className="mt-4 text-lg leading-relaxed text-ink">
         I'm always happy to talk about product, engineering, and AI. Reach out
         through any of these.
       </p>
@@ -36,7 +36,7 @@ function Contact() {
               rel={link.label === 'Email' ? undefined : 'noreferrer'}
               className="flex items-center justify-between gap-4 px-6 py-5 transition-colors hover:bg-sand/30"
             >
-              <span className="text-sm font-medium uppercase tracking-wide text-stone/60">
+              <span className="text-sm font-medium uppercase tracking-wide text-ink">
                 {link.label}
               </span>
               <span className="text-right text-stone">{link.value}</span>

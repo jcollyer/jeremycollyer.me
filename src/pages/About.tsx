@@ -5,7 +5,7 @@ function About() {
         About
       </h1>
 
-      <div className="mt-8 space-y-5 text-lg leading-relaxed text-stone/80">
+      <div className="mt-8 space-y-5 text-lg leading-relaxed text-ink">
         <p>
           I'm Jeremy Collyer, a Staff Software Engineer based in Sacramento with
           10+ years building AI-powered products and customer-facing platforms.

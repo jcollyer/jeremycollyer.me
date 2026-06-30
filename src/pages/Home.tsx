@@ -23,11 +23,11 @@ function Home() {
         Staff Software Engineer · Enterprise AI &amp; Product Engineering
       </p>
 
-      <p className="mx-auto mt-10 max-w-2xl text-xl leading-relaxed text-stone">
+      <p className="mx-auto mt-10 text-3xl leading-relaxed text-stone">
         Turning complex technology into products people trust.
       </p>
 
-      <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-ink">
+      <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-ink">
         I design and build AI-powered products that simplify complex workflows,
         helping companies transform ambitious ideas into software customers
         genuinely enjoy using.

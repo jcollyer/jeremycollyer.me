@@ -6,6 +6,7 @@ type Project = {
   logo?: string
   logoClass?: string
   url?: string
+  appStoreUrl?: string
   problem?: string[]
   overview?: string[]
   intro?: string[]
@@ -47,6 +48,8 @@ const projects: Project[] = [
     tagline: 'AI-assisted language learning',
     logo: '/ensemble-logo.png',
     url: 'https://ensemblelanguage.com',
+    appStoreUrl:
+      'https://apps.apple.com/us/app/ensemble-language/id6770618195',
     problem: [
       'After starting French classes, I tried nearly every flashcard app available. Each solved part of the problem, but none combined collaboration, AI-assisted creation, camera capture, and native mobile into a single experience.',
       'So I started building the one I wanted to use.',
@@ -116,6 +119,7 @@ const projects: Project[] = [
     logo: '/daily-harvest-logo.png',
     logoClass: 'h-[84px]',
     url: 'https://daily-harvest.com',
+    appStoreUrl: 'https://apps.apple.com/us/app/daily-harvest/id1437836101',
     problem: [
       'As Daily Harvest transitioned from Angular to React, engineering velocity, SEO, and platform consistency became increasingly important.',
       'Rather than treating performance as a technical metric, we treated it as a business opportunity.',
@@ -289,6 +293,22 @@ function Work() {
             <p className="mt-3 text-lg font-medium text-stone">
               {project.tagline}
             </p>
+
+            {project.appStoreUrl && (
+              <a
+                href={project.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block transition-opacity hover:opacity-80"
+                aria-label={`Download ${project.company} on the App Store`}
+              >
+                <img
+                  src="/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  className="h-10 w-auto"
+                />
+              </a>
+            )}
 
             <div className="mt-8 space-y-8">
               {project.problem && (

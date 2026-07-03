@@ -56,7 +56,7 @@ function App() {
       <header className="sticky top-0 z-30 px-4 pt-4">
         <nav
           className={[
-            'mx-auto flex max-w-5xl items-center justify-between rounded-2xl px-6 py-3 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300',
+            'mx-auto flex max-w-4xl items-center justify-between rounded-2xl px-6 py-3 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300',
             // Mobile keeps the bar visible; desktop reveals chrome on scroll.
             'border border-sand/70 bg-white/85 shadow-sm backdrop-blur',
             scrolled
@@ -156,12 +156,12 @@ function App() {
         </aside>
       </div>
 
-      <main className="flex-1">
+      <main className="flex flex-1 flex-col justify-center">
         <Outlet />
       </main>
 
       <footer className="border-t border-sand/70">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-ink sm:flex-row">
+        <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-ink sm:flex-row">
           <span>© {new Date().getFullYear()} Jeremy Collyer</span>
           <span>Sacramento, CA · Staff Software Engineer</span>
         </div>

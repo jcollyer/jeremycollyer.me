@@ -14,7 +14,7 @@ function Block({ title, children }: { title: string; children: React.ReactNode }
 
 function About() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <section className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
       <header className="max-w-2xl">
         <span className="block h-1 w-12 rounded-full bg-accent" aria-hidden="true" />
         <h1 className="mt-6 text-3xl font-semibold tracking-tight text-stone sm:text-4xl">

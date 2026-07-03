@@ -156,7 +156,7 @@ function App() {
         </aside>
       </div>
 
-      <main className="flex flex-1 flex-col justify-center">
+      <main className="flex flex-1 flex-col justify-none md:justify-center">
         <Outlet />
       </main>
 

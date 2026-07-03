@@ -29,7 +29,7 @@ function About() {
           download
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-stone px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-stone/90"
         >
-          <Download className="h-4 w-4 text-accent" aria-hidden="true" />
+          <Download className="h-4 w-4 text-white" aria-hidden="true" />
           Download resume
         </a>
       </header>

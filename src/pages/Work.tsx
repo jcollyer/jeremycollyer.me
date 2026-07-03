@@ -13,6 +13,7 @@ type Project = {
   built?: { label: string; items: string[] }
   highlights?: string[]
   role: string
+  technologies?: string[]
   learned?: string
 }
 
@@ -29,19 +30,18 @@ const projects: Project[] = [
       'PostPilot is an AI-powered publishing platform designed to help creators batch weeks of content in minutes. It combines AI-assisted metadata generation, intelligent scheduling, and streamlined publishing workflows into a single experience.',
       'Rather than trying to replace creativity, the goal is to remove repetitive work so creators can focus on making better content.',
     ],
-    built: {
-      label: 'What I built',
-      items: [
-        'AI-assisted metadata generation',
-        'Intelligent publishing schedules',
-        'Multi-platform publishing workflows',
-        'Calendar and queue management',
-        'Modern React application architecture',
-      ],
-    },
     role: 'Founder · Product Design · Engineering · AI Integration',
-    learned:
-      "The best products often come from solving problems you've experienced yourself.",
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'NextAuth',
+      'OpenAI',
+      'Tailwind CSS',
+      'Vercel',
+    ],
   },
   {
     company: 'Ensemble',
@@ -57,19 +57,16 @@ const projects: Project[] = [
     overview: [
       'Ensemble is a collaborative learning platform that uses multimodal AI to transform photos into structured flashcards while allowing learners to study together across web and iOS.',
     ],
-    built: {
-      label: 'What I built',
-      items: [
-        'AI-assisted flashcard generation',
-        'Camera-based card creation',
-        'Collaborative study decks',
-        'Native iOS application',
-        'Web application',
-      ],
-    },
     role: 'Founder · Product Design · Engineering',
-    learned:
-      'AI is most valuable when it removes friction without taking control away from the user.',
+    technologies: [
+      'React',
+      'Next.js',
+      'React Native',
+      'TypeScript',
+      'OpenAI',
+      'Firebase',
+      'PostgreSQL',
+    ],
   },
   {
     company: 'CAPE.AI',
@@ -110,6 +107,21 @@ const projects: Project[] = [
       'Owned frontend architecture across the platform',
     ],
     role: 'Staff Software Engineer',
+    technologies: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Python',
+      'FastAPI',
+      'PostgreSQL',
+      'SSE',
+      'LLMs',
+      'RAG',
+      'Vector Search',
+      'OCR',
+      'GitHub Actions',
+      'Storybook',
+    ],
     learned:
       "Building enterprise AI isn't about making models smarter—it's about designing experiences people trust.",
   },
@@ -135,7 +147,17 @@ const projects: Project[] = [
       'Contributed to React Native architecture',
       'Mentored engineers and guided architectural decisions',
     ],
-    role: 'Senior Software Engineer',
+    role: 'Senior Front End Engineer',
+    technologies: [
+      'React',
+      'React Native',
+      'TypeScript',
+      'Storybook',
+      'GitHub Actions',
+      'Datadog',
+      'Lighthouse',
+      'Core Web Vitals',
+    ],
     learned:
       "Performance isn't just an engineering metric. It's a product feature with measurable business impact.",
   },
@@ -157,7 +179,15 @@ const projects: Project[] = [
       'Supported web, mobile, TVs, and connected devices',
       'Mentored engineers and technical initiatives',
     ],
-    role: 'Senior Software Engineer',
+    role: 'Senior Front End Developer',
+    technologies: [
+      'React',
+      'Angular',
+      'Storybook',
+      'Design Systems',
+      'Accessibility',
+      'Web Performance',
+    ],
     learned:
       'At internet scale, consistency and reusable systems create more leverage than individual features.',
   },
@@ -175,7 +205,7 @@ const projects: Project[] = [
       'Account management',
       'Marketing site',
     ],
-    role: 'Software Engineer',
+    role: 'Front End Engineer',
   },
   {
     company: 'GoPro',
@@ -252,13 +282,7 @@ function Work() {
       <div className="mt-16">
         {projects.map((project, index) => (
           <article key={project.company} className="scroll-mt-24">
-            {index > 0 && (
-              <div className="my-16 flex items-center gap-3" aria-hidden="true">
-                <span className="h-px flex-1 bg-sand" />
-                <span className="h-1.5 w-1.5 rotate-45 bg-accent" />
-                <span className="h-px flex-1 bg-sand" />
-              </div>
-            )}
+            {index > 0 && <div className="mt-16" aria-hidden="true" />}
             <div className="flex flex-wrap items-center justify-between gap-4">
               {project.logo ? (
                 <img
@@ -355,6 +379,21 @@ function Work() {
                     {project.learned}
                   </p>
                 </div>
+              )}
+
+              {project.technologies && (
+                <Block title="Technologies">
+                  <ul className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <li
+                        key={tech}
+                        className="rounded-full bg-sand/40 px-2.5 py-0.5 text-xs font-medium text-stone"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                </Block>
               )}
 
               <Block title="Role">

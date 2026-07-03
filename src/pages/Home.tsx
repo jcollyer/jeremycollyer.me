@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <section className="mx-auto max-w-4xl px-6 pt-6 pb-16 sm:py-24 text-left">
+    <section className="mx-auto max-w-4xl px-6 pt-12 md:pt-6 pb-16 sm:py-24 text-left">
       <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5">
+                <img
+          src="/portfolio-photo.png"
+          alt="Portrait of Jeremy Collyer"
+          className="h-32 w-32 rounded-2xl object-cover shadow-sm sm:h-16 sm:w-16"
+        />
         <h1 className="whitespace-nowrap text-4xl font-semibold leading-tight tracking-tight text-stone sm:text-5xl">
           Jeremy Collyer
         </h1>
-        <img
-          src="/portfolio-photo.png"
-          alt="Portrait of Jeremy Collyer"
-          className="h-16 w-16 rounded-2xl object-cover shadow-sm"
-        />
       </div>
 
       <p className="mt-5 text-base text-ink sm:mt-6 sm:text-lg">

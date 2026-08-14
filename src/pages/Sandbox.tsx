@@ -12,6 +12,8 @@ import {
 
 export default function Sandbox() {
   return (
-    <></>
+    <main className="w-2xl m-auto border border-gray300">
+      
+    </main>
   );
 }
